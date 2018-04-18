@@ -720,8 +720,8 @@ $ sudo launchctl unload -w /Library/LaunchDaemons/net.php.9002.fpm.plist
 
 ## Install Adobe CS6
 1. Insert the installation DVD into the DVD drive, and create an ISO image as
-follows, which will be used for any installations in the future to avoid
-damaging the DVD:
+follows, which will be used for any installations in the future to protect the
+DVD from wear and tear:
 ```bash
 $ diskutil list
 $ # Find the <disk-name> of the Adobe CS6 dvd.
