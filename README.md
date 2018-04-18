@@ -10,7 +10,7 @@ macOS High Sierra (such as failed to update firmware or to download the full
 installer, and etc) or compiling PHP from source (such as the missing symbols
 issue).
 
-## Backup files
+## Backup Files
 Backup the following files:
 ```bash
 ~/
