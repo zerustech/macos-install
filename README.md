@@ -1,4 +1,4 @@
-# How to Re-install macOS High Sierra and the PHP development environment.
+# How to Re-install macOS High Sierra and the PHP Development Environment.
 This document is a guideline for re-installing macOS High Sierra and the PHP
 development environment on my MacBook Pro, so it contains some steps that are
 specific for my own environment, such as the instructions for backing up and
@@ -10,7 +10,7 @@ macOS High Sierra (such as failed to update firmware or to download the full
 installer, and etc) or compiling PHP from source (such as the missing symbols
 issue).
 
-## Backup Files
+## Backup files
 Backup the following files:
 ```bash
 ~/
@@ -196,7 +196,7 @@ $ --with-pdo-mysql \
 $ --with-iconv=/opt/local 
 ```
 
-### Fix broken libraries
+### Fix Broken Libraries
 Make the following changes in ``Makefile``:
 1. Find the line that defines ``EXTRA_LIBS`` with command ``/^EXTRA_LIBS =`` 
 
@@ -213,7 +213,7 @@ $ make
 $ sudo make install
 ```
 
-### Override PATH environment variable
+### Override PATH Environment Variable
 ```bash
 $ export PATH=/opt/php/5.6.35/bin:$PATH
 ```
@@ -404,7 +404,7 @@ $ --with-pdo-mysql \
 $ --with-iconv=/opt/local 
 ```
 
-### Fix broken libraries
+### Fix Broken Libraries
 Make the following changes in ``Makefile``:
 1. Find the line that defines ``EXTRA_LIBS`` with command ``/^EXTRA_LIBS =`` 
 
@@ -421,7 +421,7 @@ $ make
 $ sudo make install
 ```
 
-### Override PATH environment variable
+### Override PATH Environment Variable
 Append the following line to ``~/.profile`` and ``/var/root/.profile``:
 ```bash
 export PATH=/opt/php/default/bin:$PATH
@@ -593,7 +593,7 @@ http {
 }
 ```
 
-### Restore other configuration files
+### Restore other Configuration Files
 
 #### Configure ``sites-available``
 ```bash
@@ -608,7 +608,7 @@ $ # Enable a site by creating a symbolic link of its conf file from the
 $ # sites-available directory.
 ```
 
-#### Restore other configuration files
+#### Restore other Configuration Files
 Restore other files, such as ``ez_params.d`` and any site-specific configuration
 files.
 
@@ -668,7 +668,7 @@ $ sudo port install npm5
 $ java --version
 ```
 
-## Restore git configuration
+## Restore git Configuration
 Restore ``~/.gitconfig`` and ``~/.git-credentials`` from backup.
 
 ## Restore vim-profile
@@ -745,7 +745,7 @@ $ sudo launchctl stop com.parallels.desktop.launchdaemon
 $ sudo launchctl start com.parallels.desktop.launchdaemon
 ```
 
-## Install other applications
+## Install other Applications
 1. Download and install Thunderbird [[5]].
 1. Download and install LibreOffice [[6]].
 1. Install Netease Music from AppStore.
@@ -761,7 +761,7 @@ $ sudo launchctl start com.parallels.desktop.launchdaemon
 1. Download and install XMind [[13]].
 1. Download and install Skype [[14]]. 
 
-## Restore application preferences
+## Restore Application Preferences
 
 Restore the preference directories for each application as follows.
 
