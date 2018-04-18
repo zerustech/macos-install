@@ -149,6 +149,7 @@ $ tar zxf memcached.tgz -C memcached --strip-components=1
 $ rm -rf memcached.tgz
 $ git add memcached
 $ git commit -m "Add ext/memcached"
+```
 
 ### Download ext/imagick
 ```bash
@@ -358,6 +359,7 @@ $ tar zxf memcached.tgz -C memcached --strip-components=1
 $ rm -rf memcached.tgz
 $ git add memcached
 $ git commit -m "Add ext/memcached"
+```
 
 ### Download ext/imagick
 ```bash
